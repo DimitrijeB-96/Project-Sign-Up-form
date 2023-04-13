@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign up Form</title>
+</head>
+<body>
+    <div class="main-container">
+        <div id="header">
+            <img class="odin-logo" src="/image/odin-lined.png" alt="odin-logo">
+            <h1>ODIN</h1>
+        </div>
+        <div class="text-container">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p> 
+            <p>Sign up <span style="font-style: italic">now</span> to get started.</p>
+        </div>
+        <form class="form-container">      
+            <div class="label-input-container">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required minlength="4" maxlength="20"
+                pattern="[a-zA-Z]{4, 20}">
+            </div>
+            <div class="label-input-container">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required minlength="1" maxlength="20">
+            </div>
+            <div class="label-input-container">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="label-input-container">
+                <label for="phone-num">Phone Number</label>
+                <input type="tel" inputmode="numeric" id="phone-num" name="phone-num" required minlength="10" maxlength="10">
+            </div>
+            <div class="label-input-container">
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" name="password" required>
+            </div>
+            <div class="label-input-container">
+                <label for="pwd-confirm">Confirm Password</label>
+                <input type="password" id="pwd-confirm" name="confirm-password" required>
+            </div>
+            <div class="button-login">
+                <div>
+                    <button>Create Account</button>
+                </div>
+                <div>
+                    <p>Already have an account? <span>Log in</span></p>
+                </div>
+            </div>
+        </form>
+        <div id="footer">
+            <p>Photo by<a href="https://unsplash.com/@zetong"> Zetong Li </a>on<a href="https://unsplash.com/"> Unsplash</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
