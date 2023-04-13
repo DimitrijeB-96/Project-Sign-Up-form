@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'Norse Bold';
-    src: url(/odin-font/Norse-Bold.otf);
+    src: url(/Norse-Bold.otf);
 }
 
 :root {
@@ -22,7 +22,7 @@
 }
 
 body {
-    background-image: url(/image/zetong-li-unsplash.jpg);
+    background-image: url(/zetong-li-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
 }
