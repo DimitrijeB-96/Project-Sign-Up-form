@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'Norse Bold';
-    src: url(odin-font/Norse-Bold.otf);
+    src: url(./odin-font/Norse-Bold.otf);
 }
 
 :root {
