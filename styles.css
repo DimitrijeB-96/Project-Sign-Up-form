@@ -203,5 +203,5 @@ button:hover {
 
 p a {
    font-weight: 700;
-   color: var(--valid-color); 
+   color: rgb(50, 150, 250);
 }
