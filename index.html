@@ -17,36 +17,40 @@
             <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p> 
             <p>Sign up <span style="font-style: italic">now</span> to get started.</p>
         </div>
-        <form class="form-container">      
+        <form class="form-container">
             <div class="label-input-container">
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name" name="first-name" required minlength="4" maxlength="20"
+                <label for="first-name">First Name*</label>
+                <input type="text" id="first-name" name="first-name" required minlength="3" maxlength="20"
                 pattern="[a-zA-Z]{4, 20}">
             </div>
             <div class="label-input-container">
-                <label for="last-name">Last Name</label>
+                <label for="last-name">Last Name*</label>
                 <input type="text" id="last-name" name="last-name" required minlength="1" maxlength="20">
             </div>
             <div class="label-input-container">
-                <label for="email">Email</label>
+                <label for="email">Email*</label>
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="label-input-container">
                 <label for="phone-num">Phone Number</label>
-                <!-- test -->
-                <input type="tel" inputmode="numeric" id="phone-num" name="phone-num" required minlength="10" maxlength="10">
+                <input type="tel" inputmode="numeric" id="phone-num" name="phone-num" minlength="9" maxlength="12"
+                pattern="([0-9]{3}\s[0-9]{3}\s[0-9]{3,4})|[0-9]{9,10}">
             </div>
             <div class="label-input-container">
-                <label for="pwd">Password</label>
+                <label for="pwd">Password*</label>
                 <input type="password" id="pwd" name="password" required>
             </div>
             <div class="label-input-container">
-                <label for="pwd-confirm">Confirm Password</label>
+                <label for="pwd-confirm">Confirm Password*</label>
                 <input type="password" id="pwd-confirm" name="confirm-password" required>
+                <span class="pwd-not-matching"></span>
+            </div>
+            <div>
+                <p class="required-fields-text">fields with (*) are required</p>
             </div>
             <div class="button-login">
                 <div>
-                    <button>Create Account</button>
+                    <button class="btn-submit" type="submit">Create Account</button>
                 </div>
                 <div>
                     <p>Already have an account? <span>Log in</span></p>
@@ -57,5 +61,7 @@
             <p>Photo by<a href="https://unsplash.com/@zetong"> Zetong Li </a>on<a href="https://unsplash.com/"> Unsplash</a>.</p>
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
