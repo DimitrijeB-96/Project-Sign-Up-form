@@ -205,3 +205,63 @@ p a {
    font-weight: 700;
    color: rgb(50, 150, 250);
 }
+
+@media screen and (max-width: 1300px) {
+    .main-container {
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-height: 860px){
+    .main-container {
+        margin: 0 auto;
+        height: 800px;
+    }
+
+    label {
+        display: block;
+        width: 100%;
+        font-size: 1em;
+        margin-bottom: 0.2em;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-height: 800px){
+    .main-container {
+        margin: 0 auto;
+        height: 720px;
+    }
+
+    label {
+        display: block;
+        width: 100%;
+        font-size: 0.9em;
+        margin-bottom: 0.2em;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 420px) and (max-height: 920px) {
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .main-container {
+        width: 400px;
+        height: 880px;
+        margin: 2px auto;
+    }
+
+    .pwd-not-matching {
+        font-size: 0.7em;
+        margin-left: 0;
+        padding: 0.4em;
+        padding-bottom: 0.2em;
+        color: #eee;
+        border-radius: 4px;
+    }
+}
